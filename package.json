@@ -1,0 +1,57 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "author": "Junaid Sikander",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon server.js",
+    "seed": "node seeds/adminUser.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "convert-excel-to-json": "^1.7.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "firebase-admin": "^12.4.0",
+    "is-empty": "^1.2.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^8.5.1",
+    "loadsh": "^0.0.4",
+    "mongoose": "^6.4.4",
+    "multer": "^1.4.5-lts.1",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.9.1",
+    "otp-generator": "^4.0.1",
+    "path": "^0.12.7",
+    "pdf-lib": "^1.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "socket.io": "^4.6.2",
+    "validator": "^13.7.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "imports": {
+    "#config/*": "./config/*.js",
+    "#constants/*": "./constants/*.js",
+    "#controllers/*": "./controllers/*.js",
+    "#data/*": "./data/*.js",
+    "#middlewares/*": "./middlewares/*.js",
+    "#models/*": "./models/*.js",
+    "#routes/*": "./routes/*.js",
+    "#utils/*": "./utils/*.js",
+    "#sockets/*": "./sockets/*.js",
+    "#validation/*": "./validation/*.js",
+    "#cryptoHandlers/*": "./cryptoHandlers/*.js"
+  }
+}

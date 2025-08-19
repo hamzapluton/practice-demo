@@ -1,0 +1,10 @@
+.idea
+node_modules
+yarn.lock
+upload
+contractUpload
+newContractUpload
+*.zip
+ .env
+investin_backup/investin/admin_profits.bson
+investin_backup/investin/notifications.bson
