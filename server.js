@@ -49,7 +49,7 @@ app.use(cookieParser());
 app.use(log);
 
 app.get("/test", (req, res) => {
-  res.send("Hello World - Updated by CI/CD Test 🚀");
+  res.send("Server-Running");
 });
 
 app.get("/test-cron", async (req, res) => {
