@@ -49,7 +49,7 @@ app.use(cookieParser());
 app.use(log);
 
 app.get("/test", (req, res) => {
-  res.send("Server Running");
+  res.send("Hello World - Updated by CI/CD Test 🚀");
 });
 
 app.get("/test-cron", async (req, res) => {
@@ -376,3 +376,4 @@ process.on("unhandledRejection", (err, promise) => {
   console.log(`logged error: ${err}`);
   server.close(() => process.exit(1));
 });
+
